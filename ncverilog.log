@@ -1,0 +1,53 @@
+ncverilog: 15.20-s039: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
+TOOL:	ncverilog	15.20-s039: Started on Apr 09, 2020 at 12:08:32 CST
+ncverilog
+	Median_tb.v
+	+access+r
+file: Median_tb.v
+	module worklib.CLAAdder_OnlyCarryOut:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.CLAAdder_OnlyCarryOut:v <0x223508c3>
+			streams:   3, words:   901
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		              Instances  Unique
+		Modules:             14       5
+		Registers:            3       3
+		Scalar wires:        58       -
+		Expanded wires:      48       6
+		Vectored wires:       7       -
+		Initial blocks:       3       3
+		Cont. assignments:   22      12
+		Pseudo assignments:   6       5
+	Writing initial simulation snapshot: worklib.Median_tb:v
+Loading snapshot worklib.Median_tb:v .................... Done
+*Verdi* Loading libsscore_ius152.so
+ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
+ncsim> run
+                   0a=00100000 b=10000000 c=00000100 medain=00100000 
+
+                   5a=00010000 b=00000010 c=01000000 medain=00010000 
+
+                  10a=01000000 b=00100000 c=10000000 medain=01000000 
+
+                  15a=10000000 b=00010000 c=00000010 medain=00010000 
+
+                  20a=00000100 b=00000010 c=00000001 medain=00000010 
+
+                  25a=00000001 b=00001000 c=00100000 medain=00001000 
+
+                  30a=00000010 b=01000000 c=00010000 medain=00010000 
+
+                  35a=00000001 b=10000000 c=00100000 medain=00100000 
+
+                  40a=01000000 b=00000010 c=00001000 medain=00001000 
+
+Simulation complete via $finish(1) at time 45 NS + 0
+./Median_tb.v:22 		#5 $finish;
+ncsim> exit
+TOOL:	ncverilog	15.20-s039: Exiting on Apr 09, 2020 at 12:08:33 CST  (total: 00:00:01)
